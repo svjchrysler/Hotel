@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
+    android:background="@color/colorPrimaryDark"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.icescz.hotel.activities.MainActivity">
@@ -11,7 +12,7 @@
     <TextView
         android:text="@string/main.title"
         android:layout_width="0dp"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/colorText"
         android:textStyle="bold"
         android:textAlignment="textEnd"
         android:textSize="20sp"
@@ -32,6 +33,13 @@
         android:layout_height="48dp"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/indicator"
+
+        app:stpi_circleColor="#fff"
+        app:stpi_indicatorColor="#1B5E20"
+        app:stpi_lineColor="#fff"
+        app:stpi_lineDoneColor="#1B5E20"
+
+
         android:layout_marginStart="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="8dp"

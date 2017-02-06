@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
 
-    <android.support.design.widget.TextInputLayout
+    <com.github.florent37.materialtextfield.MaterialTextField
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:id="@+id/textInputLayout"
@@ -15,6 +15,7 @@
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
+        app:mtf_image="@drawable/hotel"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
@@ -26,9 +27,9 @@
             android:layout_height="wrap_content"
             android:hint="@string/main.razonsocial" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.github.florent37.materialtextfield.MaterialTextField>
 
-    <android.support.design.widget.TextInputLayout
+    <com.github.florent37.materialtextfield.MaterialTextField
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -37,6 +38,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="8dp"
+        app:mtf_image="@drawable/address"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginRight="8dp"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +50,7 @@
             android:layout_height="wrap_content"
             android:hint="@string/main.direccion" />
 
-    </android.support.design.widget.TextInputLayout>
+    </com.github.florent37.materialtextfield.MaterialTextField>
 
     <com.toptoche.searchablespinnerlibrary.SearchableSpinner
         android:layout_width="0dp"
