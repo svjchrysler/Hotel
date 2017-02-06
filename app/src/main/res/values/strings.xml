@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Hotel</string>
+    <string name="one">Uno</string>
+    <string name="two">Dos</string>
+    <string name="three">Tres</string>
+    <string name="four">Four</string>
+
+    <string name="main.title">Identificaciones del Establecimiento</string>
+    <string name="main.razonsocial">Nombre o Razon Social</string>
+    <string name="main.direccion">Direccion</string>
+
+    <string name="main.telefono">Telefono</string>
+    <string name="main.fax">Fax</string>
+    <string name="main.email">Correo Electronico</string>
+    <string name="main.cadenahotelera">Cadena Hotelera</string>
+
+    <string name="main.titlePersonal">Personal Ocupado</string>
+    <string name="main.asalariado">Asalariado</string>
+    <string name="main.independiente">Independiente</string>
+    <string name="main.personaeventual">Persona Eventual</string>
+    <string name="main.trabajadorfamiliar">Trabajador Familiar sin Remuneracion</string>
+    <string name="main.h">H</string>
+    <string name="main.m">M</string>
+    <string name="main.cero">0</string>
+
+    <string name="main.titlehotel">Datos de Ingreso</string>
+    <string name="main.usuario">Usuario</string>
+    <string name="main.password">Contraseña</string>
+    <string name="main.vpassword">Verificar Contraseña</string>
+
+
+    <string name="login.title.iniciar">Iniciar Sesion</string>
+    <string name="login.btn.iniciar">Login</string>
+    <string name="login.btn.crearcuenta">Crear Cuenta</string>
+
+
+    <string name="panel.title.admin">Administracion</string>
+</resources>
