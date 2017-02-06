@@ -50,8 +50,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     @OnClick(R.id.fabRegisterHotel)
     void registerHotel() {
-        if (edtRazonSocial == null)
-            edtRazonSocial = (EditText)viewpager.getChildAt(viewpager.getCurrentItem()).findViewById(R.id.edtRazonSocial);
+        edtRazonSocial = (EditText)viewpager.getChildAt(viewpager.getCurrentItem()).findViewById(R.id.edtRazonSocial);
         Toast.makeText(this, edtRazonSocial.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 

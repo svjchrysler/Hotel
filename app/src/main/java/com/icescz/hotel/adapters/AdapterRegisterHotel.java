@@ -7,7 +7,11 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Spinner;
+
+import com.icescz.hotel.R;
 import com.icescz.hotel.enums.EnumLayout;
+import com.toptoche.searchablespinnerlibrary.SearchableSpinner;
 
 /**
  * Created by svjchrysler on 2/5/17.
@@ -26,6 +30,17 @@ public class AdapterRegisterHotel extends PagerAdapter {
         EnumLayout enumLayout = EnumLayout.values()[position];
         LayoutInflater inflater = LayoutInflater.from(context);
         ViewGroup layout = (ViewGroup) inflater.inflate(enumLayout.getLayoutResId(), container, false);
+
+        switch (position) {
+            case 0:
+                SearchableSpinner spinner = (SearchableSpinner) layout.findViewById(R.id.scsDepartment);
+                spinner.setTitle("Select");
+                spinner.setPositiveButton("OK");
+
+
+                break;
+        }
+
         container.addView(layout);
         return layout;
     }
