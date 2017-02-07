@@ -1,13 +1,11 @@
 package com.icescz.hotel.adapters;
 
 import android.content.Context;
-import android.os.Parcelable;
 import android.support.v4.view.PagerAdapter;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Spinner;
+import android.widget.ArrayAdapter;
 
 import com.icescz.hotel.R;
 import com.icescz.hotel.enums.EnumLayout;
@@ -33,11 +31,30 @@ public class AdapterRegisterHotel extends PagerAdapter {
 
         switch (position) {
             case 0:
-                SearchableSpinner spinner = (SearchableSpinner) layout.findViewById(R.id.scsDepartment);
-                spinner.setTitle("Select");
-                spinner.setPositiveButton("OK");
+                SearchableSpinner spinnerDeparment = (SearchableSpinner) layout.findViewById(R.id.scsDepartment);
+                ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(context, R.array.department, android.R.layout.simple_spinner_dropdown_item);
+                adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinnerDeparment.setAdapter(adapter);
+                spinnerDeparment.setTitle("Departamentos");
+                spinnerDeparment.setPositiveButton("OK");
 
+                SearchableSpinner spinnerProvince = (SearchableSpinner)layout.findViewById(R.id.scsProvince);
+                spinnerProvince.setAdapter(adapter);
+                spinnerProvince.setTitle("Provincias");
+                spinnerProvince.setPositiveButton("OK");
 
+                SearchableSpinner spinnerCity = (SearchableSpinner)layout.findViewById(R.id.scsCity);
+                spinnerCity.setAdapter(adapter);
+                spinnerCity.setTitle("Ciudades");
+                spinnerCity.setPositiveButton("OK");
+                break;
+            case 1:
+                SearchableSpinner spinnerCategoryHotel = (SearchableSpinner)layout.findViewById(R.id.scsCategoryHotel);
+                ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(context, R.array.department, android.R.layout.simple_spinner_dropdown_item);
+                adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+                spinnerCategoryHotel.setAdapter(adapter1);
+                spinnerCategoryHotel.setTitle("Categoria Hotel");
+                spinnerCategoryHotel.setPositiveButton("OK");
                 break;
         }
 

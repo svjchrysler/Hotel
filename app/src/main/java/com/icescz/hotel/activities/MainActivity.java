@@ -29,9 +29,6 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     @BindView(R.id.tvTitleRegisterHotel)
     TextView tvTitleRegisterHotel;
 
-
-    private EditText edtRazonSocial;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,7 +47,7 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     @OnClick(R.id.fabRegisterHotel)
     void registerHotel() {
-        edtRazonSocial = (EditText)viewpager.getChildAt(viewpager.getCurrentItem()).findViewById(R.id.edtRazonSocial);
+        EditText edtRazonSocial = (EditText)viewpager.getChildAt(0).findViewById(R.id.edtRazonSocial);
         Toast.makeText(this, edtRazonSocial.getText().toString(), Toast.LENGTH_SHORT).show();
     }
 
