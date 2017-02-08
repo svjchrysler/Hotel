@@ -13,10 +13,13 @@ import android.widget.Toast;
 import com.badoualy.stepperindicator.StepperIndicator;
 import com.icescz.hotel.R;
 import com.icescz.hotel.adapters.AdapterRegisterHotel;
+import com.icescz.hotel.controllers.EntityUser;
+import com.icescz.hotel.models.User;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import io.realm.RealmResults;
 
 public class MainActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener {
 
@@ -47,8 +50,19 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
 
     @OnClick(R.id.fabRegisterHotel)
     void registerHotel() {
-        EditText edtRazonSocial = (EditText)viewpager.getChildAt(0).findViewById(R.id.edtRazonSocial);
-        Toast.makeText(this, edtRazonSocial.getText().toString(), Toast.LENGTH_SHORT).show();
+        //EditText edtRazonSocial = (EditText)viewpager.getChildAt(0).findViewById(R.id.edtRazonSocial);
+        //Toast.makeText(this, edtRazonSocial.getText().toString(), Toast.LENGTH_SHORT).show();
+
+
+        EntityUser entityUser = new EntityUser();
+        entityUser.registerUser();
+
+
+        RealmResults<User> result = entityUser.getUsers();
+        for (User user : result) {
+            Log.e("error", user.getUsername());
+        }
+
     }
 
     @Override
