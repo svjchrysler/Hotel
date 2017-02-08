@@ -10,8 +10,16 @@ import io.realm.annotations.PrimaryKey;
 public class Country extends RealmObject {
 
     @PrimaryKey
-    private Integer Id;
+    private Long Id;
     private String Name;
+
+    public Long getId() {
+        return Id;
+    }
+
+    public void setId(Long id) {
+        Id = id;
+    }
 
     public String getName() {
         return Name;
@@ -19,13 +27,5 @@ public class Country extends RealmObject {
 
     public void setName(String name) {
         Name = name;
-    }
-
-    public Integer getId() {
-        return Id;
-    }
-
-    public void setId(Integer id) {
-        Id = id;
     }
 }

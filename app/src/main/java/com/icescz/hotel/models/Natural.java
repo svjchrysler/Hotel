@@ -9,7 +9,7 @@ import io.realm.annotations.PrimaryKey;
 
 public class Natural extends RealmObject {
     @PrimaryKey
-    private Integer Id;
+    private Long Id;
     private Department Department;
     private Province Province;
     private City City;
@@ -18,11 +18,11 @@ public class Natural extends RealmObject {
     private String FullName;
     private String Profesion;
 
-    public Integer getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 

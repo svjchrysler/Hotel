@@ -9,16 +9,17 @@ import io.realm.annotations.PrimaryKey;
  */
 
 public class Province extends RealmObject {
-    @PrimaryKey
-    private Integer Id;
-    private String Name;
-    private Department Departments;
 
-    public Integer getId() {
+    @PrimaryKey
+    private Long Id;
+    private String Name;
+    private Department Department;
+
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 
@@ -27,14 +28,14 @@ public class Province extends RealmObject {
     }
 
     public void setName(String name) {
-        this.Name = name;
+        Name = name;
     }
 
-    public Department getDepartments() {
-        return Departments;
+    public com.icescz.hotel.models.Department getDepartment() {
+        return Department;
     }
 
-    public void setDepartments(Department departments) {
-        Departments = departments;
+    public void setDepartment(com.icescz.hotel.models.Department department) {
+        Department = department;
     }
 }

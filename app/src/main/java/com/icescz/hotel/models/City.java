@@ -10,15 +10,15 @@ import io.realm.annotations.PrimaryKey;
 
 public class City extends RealmObject {
     @PrimaryKey
-    private Integer Id;
+    private Long Id;
     private String Name;
-    private Province provinces;
+    private Province Province;
 
-    public Integer getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 
@@ -27,14 +27,14 @@ public class City extends RealmObject {
     }
 
     public void setName(String name) {
-        this.Name = name;
+        Name = name;
     }
 
-    public Province getProvinces() {
-        return provinces;
+    public com.icescz.hotel.models.Province getProvince() {
+        return Province;
     }
 
-    public void setProvinces(Province provinces) {
-        this.provinces = provinces;
+    public void setProvince(com.icescz.hotel.models.Province province) {
+        Province = province;
     }
 }

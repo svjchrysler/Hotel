@@ -11,7 +11,7 @@ import io.realm.annotations.PrimaryKey;
 public class Hotel extends RealmObject {
 
     @PrimaryKey
-    private Integer Id;
+    private Long Id;
     private User User;
     private Department Department;
     private Province Province;
@@ -27,11 +27,11 @@ public class Hotel extends RealmObject {
     private String WebSite;
     private String HotelChain;
 
-    public Integer getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 
@@ -81,6 +81,14 @@ public class Hotel extends RealmObject {
 
     public void setCategoryHotel(com.icescz.hotel.models.CategoryHotel categoryHotel) {
         CategoryHotel = categoryHotel;
+    }
+
+    public RealmList<Personal> getPersonals() {
+        return Personals;
+    }
+
+    public void setPersonals(RealmList<Personal> personals) {
+        Personals = personals;
     }
 
     public String getBusinessName() {

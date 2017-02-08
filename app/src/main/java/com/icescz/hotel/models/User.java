@@ -8,16 +8,17 @@ import io.realm.annotations.PrimaryKey;
  */
 
 public class User extends RealmObject {
+
     @PrimaryKey
-    private Integer Id;
+    private Long Id;
     private String Username;
     private String Password;
 
-    public Integer getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 

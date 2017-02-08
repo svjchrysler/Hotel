@@ -10,31 +10,31 @@ import io.realm.annotations.PrimaryKey;
 
 public class Guest extends RealmObject {
     @PrimaryKey
-    private Integer id;
-    private String address;
-    private String phone;
+    private Long Id;
+    private String Address;
+    private String Phone;
 
-    public Integer getId() {
-        return id;
+    public Long getId() {
+        return Id;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setId(Long id) {
+        Id = id;
     }
 
     public String getAddress() {
-        return address;
+        return Address;
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        Address = address;
     }
 
     public String getPhone() {
-        return phone;
+        return Phone;
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
+        Phone = phone;
     }
 }

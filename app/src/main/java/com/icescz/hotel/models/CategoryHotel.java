@@ -9,14 +9,14 @@ import io.realm.annotations.PrimaryKey;
 
 public class CategoryHotel extends RealmObject {
     @PrimaryKey
-    private Integer Id;
+    private Long Id;
     private String Name;
 
-    public Integer getId() {
+    public Long getId() {
         return Id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         Id = id;
     }
 
@@ -25,6 +25,6 @@ public class CategoryHotel extends RealmObject {
     }
 
     public void setName(String name) {
-        this.Name = name;
+        Name = name;
     }
 }
