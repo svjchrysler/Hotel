@@ -52,8 +52,6 @@ public class MainActivity extends AppCompatActivity implements ViewPager.OnPageC
     void registerHotel() {
         //EditText edtRazonSocial = (EditText)viewpager.getChildAt(0).findViewById(R.id.edtRazonSocial);
         //Toast.makeText(this, edtRazonSocial.getText().toString(), Toast.LENGTH_SHORT).show();
-
-
         EntityUser entityUser = new EntityUser();
         entityUser.registerUser();
 

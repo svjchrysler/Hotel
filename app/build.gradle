@@ -47,4 +47,9 @@ dependencies {
 
     //MaterialTextField
     compile 'com.github.florent37:materialtextfield:1.0.7'
+
+    //Retrofit
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
 }
